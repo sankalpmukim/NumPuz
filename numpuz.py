@@ -47,8 +47,8 @@ def right(board):
 	i,j = findIJ(board)
 	board[i][j+1], board[i][j] = board[i][j], board[i][j+1]
 
-def main():
-	n=10 #used to create an nxn board
+def main(n):
+	#n used to create an nxn board
 	N=n**2
 	values = list()
 	while(len(values)<N): # used to create an random order of values from 0 to N-1
@@ -106,4 +106,4 @@ def main():
 	print("GAME OVER!\nYOUU WON!!")
 
 if __name__ == '__main__':
-	main()
+	main(4)
